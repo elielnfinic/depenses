@@ -1,0 +1,28 @@
+
+
+#depenses,#entrees,#parametresn,#outils{
+	background:rgba(0,0,255,0.2);
+	background:url("../img/background.png");
+}
+
+#depenses table,#entrees table,#outils table{
+	width:100%;
+}
+
+#depenses table tr td,#entrees table tr td,#outils table tr td{
+	color:white;
+	text-shadow:1px 1px 1px black;
+}
+
+#depenses table tr td input,#entrees table tr td input,#outils table tr td input ["type!='checkbox'"]{
+	width:100%;
+	
+}
+
+#outils table tr td fieldset{
+	color:black;
+}
+
+#outils table tr td fieldset legend{
+	text-transform:uppercase;
+}

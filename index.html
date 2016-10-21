@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Nous voulons voir Jesus-Christ</title>
+			<link rel="stylesheet" href="css/style1.css"/>
+		</head>
+		<body>
+			<style type="text/css">
+				@import url("libs/jquery.mobile-1.4.5.css");
+				@import url("css/style1.css");
+			</style>
+			<div data-role="page" id="depenses">
+				
+				<div data-role="header">
+					<h1>Depenses</h1>
+				</div>
+				
+				<div data-role="main">
+					<form action="" method="post">
+						<table>
+							<tr><td>
+								Cause
+								<select>
+									<option value="1">Paie</option>
+									<option value="1">Achat</option>
+									<option value="1">Don</option>
+								</select>
+							</td></tr>
+							<tr><td>Description<input type="text" name="description"/></td></tr>
+							<tr><td>Montant<input type="text" name="montant"/></td></tr>
+							<tr><td>
+								Devise
+								<select name="devise">
+									<option value="1">$</option>
+									<option value="1">&euro;</option>
+									<option value="1">FC</option>
+								</select>
+							</td></tr>
+							<tr><td><input type="text" name="contenu"/></td></tr>
+							<tr><td>
+								<button type="button">Enregistrer</button>
+							</td></tr>
+						</table>
+					</form>
+				</div>
+				
+				<div data-role="footer" data-position="fixed">
+					<a href="#entrees">Aller aux depenses</a>
+					<a href="#parametres" class="ui-btn ui-icon-wheel ui-btn-icon-left">Par</a>
+				</div>
+			</div>
+			
+			<div data-role="page" id="entrees">
+				
+				<div data-role="header">
+					<h1>Entr&eacute;es</h1>
+				</div>
+				<div data-role="main">
+					<form action="" method="post">
+						<table>
+							<tr><td>
+								Cause
+								<select>
+									<option value="1">Don</option>
+									<option value="1">Travail</option>
+								</select>
+							</td></tr>
+							<tr><td>Provenance<input type="text" name="description"/></td></tr>
+							<tr><td>Montant<input type="text" name="montant"/></td></tr>
+							<tr><td>
+								Devise
+								<select name="devise">
+									<option value="1">$</option>
+									<option value="1">&euro;</option>
+									<option value="1">FC</option>
+								</select>
+							</td></tr>
+							<tr><td><input type="text" name="contenu"/></td></tr>
+							<tr><td>
+								<button type="button">Enregistrer</button>
+							</td></tr>
+						</table>
+					</form>
+				</div>
+				
+				<div data-role="footer" data-position="fixed">
+					<a data-rel="back">Retour</a>
+				</div>				
+			</div>
+			
+			<div data-role="page" id="parametres">
+				
+				<div data-role="header">
+					<h1>Param&egrave;tres</h1>
+				</div>
+				
+				<div data-role="main">
+					<form action="" method="post">
+						<table>
+							<tr><td>Taux de FC en $<input type="text" name="description"/></td></tr>
+							<tr><td>Taux de $ en &euro;<input type="text" name="montant"/></td></tr>
+							<tr><td>
+								Devise par d&eacute;faut
+								<select name="devise">
+									<option value="1">$</option>
+									<option value="1">&euro;</option>
+									<option value="1">FC</option>
+								</select>
+							</td></tr>
+							<!--<tr><td><input type="text" name="contenu"/></td></tr>-->
+							<tr><td>
+								<button type="button">Enregistrer</button>
+							</td></tr>
+						</table>
+					</form>
+				</div>
+				
+				<div data-role="footer" data-position="fixed">
+					<a data-rel="back">Retour</a>
+				</div>				
+			</div>
+			
+			<div data-role="page" id="outils">
+				
+				<div data-role="header">
+					<h1>Outils</h1>
+				</div>
+				
+				<div data-role="main">
+					
+						<table>
+							<form action="" method="post">
+							<fieldset>
+							<tr>
+								<td>
+									Envoyer rapport &agrave; mon adresse
+									<input type="text" name="adresseMail" placeholder="Write your mail adress here"/>
+							
+									Effacer les donn&eacute;es envoy&eacute;es de mon t&eacute;l&eacute;phone
+									<input type="checkbox" name="testEffacer"/> 
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<button type="submit">Envoyer</button>
+								</td>
+							</tr>
+							</form>
+							
+							<tr>
+								<td>
+									<div data-role="collapsible">
+										<h1>Voir ses depenses de cette semaine</h1>
+										<form class="ui-filterable">
+											<input id="monFiltre" data-type="search"/>
+										
+										<!--<p data-role="listview" data-filter="true" data-input="#monFiltre">-->
+										<p>
+											<ul data-role="listview" data-filter="true" data-input="#monFiltre">
+												<li>
+													<fieldset>
+														<legend>Achat du credit</legend>
+														200 FC<br/>
+														Le 20/Janvier/2015
+													</fieldset>
+												</li>
+												<li>
+													<fieldset>
+														<legend>Achat du credit</legend>
+														200 FC<br/>
+														Le 20/Janvier/2015
+													</fieldset>
+												</li>
+												<li>
+													<fieldset>
+														<legend>Achat du credit</legend>
+														300 FC<br/>
+														Le 20/Janvier/2015
+													</fieldset>
+												</li>
+												<li>
+													<fieldset>
+														<legend>Achat du credit</legend>
+														200 FC<br/>
+														Le 20/Janvier/2015
+													</fieldset>
+												</li>
+												<li>
+													<fieldset>
+														<legend>Achat du credit</legend>
+														200 FC<br/>
+														Le 20/Janvier/2015
+													</fieldset>
+												</li>
+												<li>
+													<fieldset>
+														<legend>Achat du credit</legend>
+														200 FC<br/>
+														Le 20/Janvier/2015
+													</fieldset>
+												</li>
+												<li>
+													<fieldset>
+														<legend>Achat du credit</legend>
+														200 FC<br/>
+														Le 20/Janvier/2015
+													</fieldset>
+												</li>
+											</ul>
+										</p>
+										</form>
+									</div>									
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div data-role="collapsible">
+										<h1>Voir ses entr&eacute;es de ce mois</h1>
+										<p>
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+										</p>
+									</div>									
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div data-role="collapsible">
+										<h1>Voir ses depenses de ce mois</h1>
+										<p>
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+										</p>
+									</div>									
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div data-role="collapsible">
+										<h1>Voir ses entr&eacute;es de ce mois</h1>
+										<p>
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+											
+											<fieldset>
+												<legend>Achat du credit</legend>
+												200 FC<br/>
+												Le 20/Janvier/2015
+											</fieldset>
+										</p>
+									</div>									
+								</td>
+							</tr>
+							<!--<tr><td>Taux de $ en &euro;<input type="text" name="montant"/></td></tr>
+							<tr><td>
+								Devise
+								<select name="devise">
+									<option value="1">$</option>
+									<option value="1">&euro;</option>
+									<option value="1">FC</option>
+								</select>
+							</td></tr>
+							<tr><td><input type="text" name="contenu"/></td></tr>
+							<tr><td>
+								<button type="button">Enregistrer</button>
+							</td></tr>-->
+						</table>
+					
+				</div>
+				
+				<div data-role="footer" data-position="fixed">
+					<a data-rel="back">Retour</a>
+				</div>				
+			</div>
+			<script type="text/javascript" charset="UTF-8" src="libs/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript" charset="UTF-8" src="libs/jquery.mobile-1.4.5.js"></script>
+			<script type="text/javascript" charset="UTF-8" src="js/script1.js"></script>
+		</body>
+	</html>
